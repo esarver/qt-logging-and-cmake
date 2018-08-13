@@ -21,5 +21,5 @@ target_link_libraries(
     Qt5::Test
 )
 
-add_test(${testname} ${testname}) 
+add_test(NAME ${testname} COMMAND <TARGET_FILE:${testname}>) 
 
